@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Store</title>
+  <meta name="store" content="This is the store's descriptio">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="cart.js" async></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			font-family: Ariel;
+			min-height: 100vh; /* Set minimum height to the viewport height */
+			position: relative; /* Set relative position to allow footer absolute positioning */
+      overflow-x: hidden;
+		}
+		/*Image and Text*/
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+      
+		}
+		ul { 
+			text-decoration: underline;
+		}
+		
+   		/* navbar */
+		.navbar {
+			display: flex;
+			flex-wrap: wrap;
+			background-color: #1f456e;
+			color: #fff;
+      		border-style: solid;
+      		border-color: #2C3E4C;
+		}
+		
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px 20px;
+			display: block;
+			text-align: center;
+			flex-grow: 1;
+			transition: background-color 0.3s ease-in-out;
+		}
+		
+		.navbar a:hover {
+			background-color: #555;
+		}
+		
+		.navbar a:last-child {
+			border-right: none;
+		}  
+   
+ 		/* footer */
+		.footer {
+			background-color: darkblue;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			font-size: 14px;
+			position: absolute;
+			bottom: 0; 
+			width: 100%; 
+		}
+		
+		.footer a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 10px;
+			transition: opacity 0.3s ease-in-out;
+		}
+		
+		.footer a:hover {
+			opacity: 0.7;
+		}
+
+   
+   /* link to socials */
+  .fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 1px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    background: black;
+    color: white;
+  }
+	</style>
+</head>
+
+
+<body>
+	<nav class="navbar">
+		<a href="http://eve.kean.edu/~bancaila/index.html">Home</a>
+		
+   <a href="http://eve.kean.edu/~bancaila/index.html">Store</a>
+    
+    <a href="http://eve.kean.edu/~bancaila/About.html">About Me</a>	
+
+	<a href="http://eve.kean.edu/~bancaila/Work.html">My Work</a>	
+   
+    <a href="http://eve.kean.edu/~bancaila//Contact.html">Contact</a>
+
+	<div class="topnav-left">
+        <a href="https://www.linkedin.com/in/lark-bancairen-a18673251/" class="fa fa-linkedin"></a>
+      </div>
+
+	</nav>
+  
+ <h1><left><ul>My Store</ul></left></h1>
+   <section class="container content-section">
+            <h2 class="section-header">Hot Wheels Car Collection</h2>
+            
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Bugatti Chiron</span>
+                    <img class="shop-item-image" src="http://eve.kean.edu/~bancaila/bugattiHW.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$34.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Honda Civic</span>
+                    <img class="shop-item-image" src="http://eve.kean.edu/~bancaila/civicHW.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Nissan GTR</span>
+                    <img class="shop-item-image" src="http://eve.kean.edu/~bancaila/gtrHW.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$24.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>	
+         <br><br><br><br>
+	<footer class="footer">
+    <p>&copy; Copyright 2023, Property of Lark Bancairen. All rights reserved.</p>
+    <a href="http://eve.kean.edu/~bancaila/index.html">Home</a> |<a href="http://eve.kean.edu/~bancaila/About.html">About Me</a> |<a href="http://eve.kean.edu/~bancaila//Contact.html">Contact 
+
+  </footer>
+  
+</body>
+
+</html>
+
